@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: In the naked twin problem, the constraint that occurs is that two boxes within a unit can contain the same character space of size 2. That is, within that unit, those two characters can only occur in those two boxes. This means that all other boxes in that unit cannot contain those characters. And hence by 'propagating' this local constraint to the other boxes in the unit, we can safely eliminate the two characters as possibilities in the other boxes.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The constraint in this case is that the numbers 1-9 can occur only once across the two diagonals in a sudoku puzzle. And so, by adding this constraint as we perform the strategies of elimination, one choice and search, we are reducing the space of possible values in some boxes by adding the rule that if the number has already occured in the diagnal, it cannot occur in the box in consideration.
 
 ### Install
 
